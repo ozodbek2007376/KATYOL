@@ -1,0 +1,18 @@
+/* Main Global CSS Entrypoint */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import './variables.css';
+@import './custom-bootstrap.css';
+@import './utilities.css';
+@import './animations.css';
+
+/* Global Reset & Container Rule */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

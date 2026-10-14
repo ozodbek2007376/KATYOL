@@ -1,0 +1,87 @@
+/* ERP Utility Classes */
+
+.min-w-0 {
+  min-width: 0 !important;
+}
+
+.erp-glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+[data-theme='dark'] .erp-glass {
+  background: rgba(21, 28, 44, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.text-muted-custom {
+  color: var(--erp-text-muted) !important;
+}
+
+.bg-body-custom {
+  background-color: var(--erp-bg-body) !important;
+}
+
+.bg-card-custom {
+  background-color: var(--erp-bg-card) !important;
+}
+
+.border-custom {
+  border: 1px solid var(--erp-border-color) !important;
+}
+
+/* Stat card trend indicators */
+.trend-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--erp-radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.trend-badge.up {
+  background-color: var(--erp-success-bg);
+  color: var(--erp-success);
+}
+
+.trend-badge.down {
+  background-color: var(--erp-danger-bg);
+  color: var(--erp-danger);
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.7);
+}
+
+/* Sidebar & General Hover effects */
+.hover-bg-dark:hover {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+[data-theme='dark'] .hover-bg-dark:hover {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+/* Force dark hover for elements that are always dark (like the main sidebar) */
+aside .hover-bg-dark:hover {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+}
